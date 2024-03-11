@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>simple_image_pubsub</name>
+  <version>0.0.0</version>
+  <description>Simple image subscriber node</description>
+  <maintainer email="jkh0038@auburn.edu">jkh0038</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  
+  <!-- Add Build Dependencies -->
+<build_depend>rclcpp</build_depend>
+<build_depend>sensor_msgs</build_depend>
+<build_depend>cv_bridge</build_depend>
+<build_depend>OpenCV</build_depend>
+<build_depend>std_msgs</build_depend>
+<build_depend>softsys_msgs</build_depend>
+ <!-- Add std_msgs as it's used in the yawlat_subscriber_node -->
+
+<!-- Add Exec Dependencies -->
+<exec_depend>rclcpp</exec_depend>
+<exec_depend>sensor_msgs</exec_depend>
+<exec_depend>cv_bridge</exec_depend>
+<exec_depend>OpenCV</exec_depend>
+<exec_depend>std_msgs</exec_depend>
+<exec_depend>softsys_msgs</exec_depend>
+ <!-- Add std_msgs as it's used in the yawlat_subscriber_node -->
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
+
